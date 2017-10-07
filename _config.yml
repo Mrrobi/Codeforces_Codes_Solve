@@ -1,1 +1,5 @@
-theme: jekyll-theme-merlot
+title: Codeforces OJ Solutions
+description: Just All solves.
+show_downloads: false
+google_analytics: true
+theme: jekyll-theme-hacker
