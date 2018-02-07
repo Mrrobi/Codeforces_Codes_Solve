@@ -1,47 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int main()
-{
-	long long int n,m,count=0,x=0,a=1,ch=0;
+int main(){
+	int n,m;
 	cin>>n>>m;
-	long long int ara[m+1];
-	for(int i=1;i<=m;i++){
-		if(i==1){
-            cin>>ara[a];
-            a++;
-        }
-        else if(i!=1){
-            cin>>ara[a];
-            if(ara[a]==ara[a-1]){
-                a--;
-				ch++;
-            }
-			else{
-				a++;
-			}
-        }
-	}
-	m=m-ch;
-	//cout<<m<<" "<<a<<endl;
-	a=1;
-
-	for(int i=1;i<=n;i++){
-
-
-        //cout<<count<<endl;
-		if(ara[a]==i){
-			a++;
-			continue;
+	int prev=1,curr;
+	long long ct=0;
+	for(int i=0;i<m;i++){
+		cin>>curr;
+		if(prev<=curr){
+			ct+=curr-prev;
+			prev=curr;
 		}
-
-        if(a>m)
-            break;
-        count++;
-        if(i+1>n){
-    		i=0;
-    	}
+		else if(prev>curr){
+			ct+=n-prev+curr;
+			prev=curr;
+		}
 	}
-	cout<<count<<endl;
-	return 0;
+	cout<<ct<<endl;
 }
