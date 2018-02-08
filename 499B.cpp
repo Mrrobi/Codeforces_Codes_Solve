@@ -2,7 +2,7 @@
 using namespace std;
 
 string mini(string x,string y){
-    if(x.length()<y.length())return x;
+    if(x.length()<=y.length())return x;
     else return y;
 }
 int main() {
