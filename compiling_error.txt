@@ -1,0 +1,181 @@
+F:\github\Codeforces_Codes_Solve\279B.cpp:50:35: warning: variadic templates only available with -std=c++11 or -std=gnu++11
+     template<typename T, typename ... aT>
+                                   ^
+F:\github\Codeforces_Codes_Solve\279B.cpp:51:47: warning: variadic templates only available with -std=c++11 or -std=gnu++11
+     static void call(si it, si ed, T a, aT... rest) {
+                                               ^
+F:\github\Codeforces_Codes_Solve\279B.cpp: In function 'int main()':
+F:\github\Codeforces_Codes_Solve\279B.cpp:68:10: error: 'count' does not name a type
+     auto count = upper_bound(all(v),k);
+          ^
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:16: error: no match for 'operator-' (operand types are '<unresolved overloaded function type>' and 'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}')
+     cout<<count-v.begin()<<endl;
+                ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/algorithm:61,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:64,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:328:5: note: candidate: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:328:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::reverse_iterator<_Iterator>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/algorithm:61,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:64,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:385:5: note: candidate: template<class _IteratorL, class _IteratorR> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:385:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::reverse_iterator<_IteratorR>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:66:0,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:356:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:356:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::complex<_Tp>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:66:0,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:365:5: note: candidate: std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&) [with _Tp = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]
+     operator-(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:365:5: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const std::complex<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> > >&'
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:374:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)
+     operator-(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:374:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::complex<_Tp>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:66:0,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:451:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/complex:451:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   candidate expects 1 argument, 2 provided
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/deque:64:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:67,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_deque.h:349:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_deque.h:349:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/deque:64:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:67,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_deque.h:361:5: note: candidate: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator-(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_deque.h:361:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::_Deque_iterator<_Tp, _RefR, _PtrR>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/vector:65:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/queue:61,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:85,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_bvector.h:208:3: note: candidate: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const std::_Bit_iterator_base&'
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:587:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note: candidate: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::_Expr<_Dom2, typename _Dom2::value_type>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:587:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   couldn't deduce template parameter '_Dom'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:587:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:587:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   couldn't deduce template parameter '_Dom'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:587:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94:0,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::valarray<_Tp>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:94:0,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note: candidate: std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const _Tp&) [with _Tp = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >; typename std::__fun<std::__minus, _Tp>::result_type = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const std::valarray<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> > >&'
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__minus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/valarray:1168:1: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   'std::vector<unsigned int>::iterator {aka __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >}' is not derived from 'const std::valarray<_Tp>'
+     cout<<count-v.begin()<<endl;
+                         ^
+In file included from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/algorithm:61,
+                 from C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/stdc++.h:64,
+                 from F:\github\Codeforces_Codes_Solve\279B.cpp:1:
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:923:5: note: candidate: typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&) [with _Iterator = unsigned int*; _Container = std::vector<unsigned int>; typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type = int]
+     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:923:5: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >&'
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:916:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> typename __gnu_cxx::__normal_iterator<_IteratorL, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/stl_iterator.h:916:5: note:   template argument deduction/substitution failed:
+F:\github\Codeforces_Codes_Solve\279B.cpp:69:25: note:   couldn't deduce template parameter '_IteratorL'
+     cout<<count-v.begin()<<endl;
+                         ^
