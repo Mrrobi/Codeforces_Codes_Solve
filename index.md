@@ -62,21 +62,6 @@ layout: default
     display: block;
 }
 </style>
-<div class="navbar">
-  <a href="https://mrrobi.github.io">Home</a>
-  <a href="news.html">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">More
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="operator.html">Operator</a>
-	  <a href="condition.html">Condition</a>
-	  <a href="loops.html">Loops</a>
-	  <a href="newarr.html">1D Array</a>
-	  <a href="drafts.html">My Archive</a>
-    </div>
-  </div> 
-</div>
+<a href="https://mrrobi.github.io">Home</a>
 <blockquote class="embedly-card"><h4><a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Problemset - Codeforces</a></h4><p>Codeforces. Programming competitions and contests, programming community</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
